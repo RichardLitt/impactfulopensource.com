@@ -1,5 +1,4 @@
 {
-  "name": "Impactful Open Source",
   "private": true,
   "version": "0.0.0",
   "main": "gulpfile.js",
@@ -15,5 +14,9 @@
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.1"
+  },
+  "scripts": {
+    "build": "npm install && bundle exec jekyll build",
+    "serve": "npm install && bundle exec jekyll serve"
   }
 }
