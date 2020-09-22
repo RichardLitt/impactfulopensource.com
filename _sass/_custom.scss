@@ -1,0 +1,200 @@
+// Fonts
+@import "fontawesome/scss/fontawesome.scss";
+@import "fontawesome/scss/solid.scss";
+@import "fontawesome/scss/brands.scss";
+
+// Variables
+$primary-font: 'Arial', sans-serif;
+$secondary-font: 'Times', sans-serif;
+$black: #000;
+$green: #9DFF73;
+$fa-font-path: "fontawesome/webfonts";
+
+$blue : #2292CE;
+$pink : #ED4789;
+// $green : #7BC9AC;
+$yellow : #FFDD57;
+$black: #000;
+$white: #FFF;
+
+.center {
+  text-align: center;
+}
+
+body {
+  font-family: $primary-font;
+  text-align: center;
+  color: $black;
+}
+
+p, li {
+  letter-spacing: -0.38px;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: underline;
+  color: #2A27F4;
+  &.btn {
+    text-decoration: none;
+  }
+}
+
+
+.logo {
+  margin: 0px auto;
+  padding: 10em;
+  img {
+    display: block;
+    padding: 100px;
+    margin: 0px auto;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  h1, p, div {
+    font-family: $secondary-font;
+    background: $green;
+    max-width: 600px;
+    margin: 0px auto 50px auto;
+    padding: 20px;
+  }
+  p {
+    font-size: 1.8rem;
+    color: $black;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.heading {
+  background: $green;
+  padding: 20px;
+  margin: 50px 0px;
+  font-family: $secondary-font;
+}
+
+
+.tagline {
+  margin: 0px auto 20px;
+  font-family: $secondary-font;
+  letter-spacing: 0px;
+  span {
+    text-decoration: solid underline 3px;
+  }
+}
+
+.top-content {
+  p {
+    font: 300 16px/29px $primary-font;
+    letter-spacing: -0.38px;
+    color: $black;
+  }
+}
+
+#the-letter {
+  padding: 0px 20px;
+}
+
+hr {
+  border: 3px dashed #7BC9AC;
+  opacity: 0.5;
+  &.mini {
+    max-width: 40%;
+  }
+  &.border-green {
+    border-color: #7BC9AC;
+  }
+  &.border-pink {
+    border-color: #FF62A0;
+  }
+  &.border-yellow {
+    border-color: #FFDD57;
+  }
+  &.border-blue {
+    border-color: #58B2E4;
+  }
+}
+
+h1 {
+  font: $secondary-font;
+  letter-spacing: 0px;
+  margin: 30px auto 10px;
+  color: $black;
+  opacity: 1;
+}
+
+#back-to-top {
+  background: $green;
+  color: $black;
+}
+
+.attributions {
+  padding-top: 50px;
+}
+
+.social-icons {
+  max-width: 300px;
+  margin: 15px auto;
+  // background-color: $green;
+  a {
+    padding: 0px 10px;
+    color: $black;
+    font-size: 2.5rem;
+     img {
+       width: 40px;
+       filter: invert(11%) sepia(98%) saturate(6046%) hue-rotate(247deg) brightness(94%) contrast(104%);
+     }
+  }
+}
+
+#footer {
+  margin-top: 6vh;
+  .small-print {
+    margin-top: 3vh;
+    letter-spacing: -0.14px;
+  }
+  .footer-link {
+    padding: 20px 0px;
+  }
+}
+
+.bottom-banner {
+  max-width: none;
+  &:hover {
+    cursor: grab;
+  }
+  margin-top: 20px;
+  p {
+    margin-top: 10px;
+  }
+  color: black;
+  letter-spacing: 0.02px;
+  img {
+    transform: scale(50%) rotate(-90deg);
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .logo {
+    padding: 2em;
+  }
+}
+
+#banner .banner-button:hover{
+  @include hover($black, $black,$yellow);
+}
+
+#banner a {
+  text-decoration: none;
+}

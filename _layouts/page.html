@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+  <article class="entry">
+    <div class="entry-wrapper">
+      <header class="entry-header">
+      {% if page.ignore_title %}
+        <div class="empty-title"></div>
+      {% else %}
+        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+      {% endif %}
+      </header>
+      <div class="entry-content">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-8 text-left">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+</div>
